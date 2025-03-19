@@ -1,0 +1,120 @@
+.detalhe {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.detalhe .detalheLeft-img img {
+  height: 450px;
+  margin-top: 100px;
+  margin-left: -450px;
+}
+
+.detalhe .detalheLeft-bg {
+  background-color: black;
+  width: 850px;
+  height: 700px;
+}
+
+.detalhe .detalheLeft-info h3 {
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  margin: 100px 100px 30px 50px;
+}
+
+.detalhe .detalheLeft-info p {
+  font-family: "Roboto";
+  margin-right: 150px;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  margin: 50px 100px 30px 50px;
+}
+
+.detalhe .detalheLeft-info .detalheLeft-btn,
+.detalhe .detalheRight-info .detalheRight-btn {
+  font-family: "Roboto";
+  background-color: black;
+  border-color: black;
+  color: white;
+  border-radius: 70px;
+  display: block;
+  padding: 15px 20px;
+  letter-spacing: 0.1rem;
+  margin-left: 50px;
+}
+
+.detalhe .detalheLeft-info .detalheLeft-btn:hover,
+.detalhe .detalheRight-info .detalheRight-btn:hover {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.detalhe .detalheRight-bg {
+  background-color: rgb(234, 206, 0);
+  width: 650px;
+  height: 750px;
+  position: absolute;
+  right: 0;
+  margin-top: -170px;
+  z-index: -100;
+}
+
+.detalhe .detalheRight-img img {
+  height: 450px;
+  z-index: 1000;
+  margin-right: -250px;
+}
+
+.detalhe .detalheRight-info h3 {
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  text-align: right;
+  position: absolute;
+  left: 100px;
+}
+
+.detalhe .detalheRight-info p {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-align: right;
+  position: absolute;
+  left: 110px;
+  margin-top: 80px;
+}
+.detalhe .detalheRight-info .detalheRight-btn {
+  position: absolute;
+  left: 210px;
+  margin-top: 170px;
+}
+
+.detalhe .left {
+  display: flex;
+  grid-column: 1;
+}
+
+.detalhe .right {
+  display: flex;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.detalhe .left2 {
+  grid-row: 3;
+  grid-column: 1;
+  display: flex;
+}
+
+.detalhe #right {
+  grid-row: 4;
+}
