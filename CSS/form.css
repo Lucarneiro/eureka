@@ -6,12 +6,15 @@
 #form {
   background-color: rgb(234, 206, 0);
   margin-right: 130px;
-  padding: 30px;
   border-radius: 20px;
   margin-bottom: 100px;
   grid-column: 2;
   grid-row: 2;
   letter-spacing: 0.1rem;
+}
+
+.form h1 {
+  grid-column: 1/-1;
 }
 
 .form label {
@@ -32,7 +35,7 @@
   margin-left: 50px;
   margin-right: 50px;
   border: none;
-  border-radius: 50px;
+  border-radius: 60px;
 }
 
 .form button {
@@ -60,11 +63,10 @@
 .form legend {
   font-family: "Roboto";
   margin: 30px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   letter-spacing: 0.05rem;
   font-weight: 600;
   display: block;
-  margin-left: 50px;
 }
 
 .form iframe {
@@ -76,7 +78,7 @@
   grid-column: 1;
   grid-row: 2;
   font-family: "Roboto";
-  margin-left: 120px;
+  margin-left: 150px;
   width: 30vw;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
@@ -86,4 +88,18 @@
   font-weight: 700;
   margin-bottom: 15px;
   margin-top: 30px;
+}
+
+.form .form-infos h2:first-child {
+  font-size: 1.3rem;
+  font-weight: 900;
+  line-height: 1.8rem;
+}
+
+.form .form-infos h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(234, 206, 0);
+  margin-top: -5px;
+  margin-bottom: 50px;
 }

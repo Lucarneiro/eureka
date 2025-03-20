@@ -1,0 +1,133 @@
+.clientes {
+  margin-top: 200px;
+}
+
+.clientes .logo-clientes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 100px;
+  justify-content: center;
+  padding: 30px;
+  padding-top: 60px;
+}
+
+.clientes .logo-clientes img {
+  height: 50px;
+}
+.clientes .logo-clientes img:hover {
+  cursor: pointer;
+}
+
+.clientes .clientes-bg {
+  line-height: 0;
+  border-style: solid;
+  border-color: white black white;
+  border-width: 0px 0px 0px;
+  border-left: 70px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.clientes .clientes-bg::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: black;
+  border-radius: 0 190px 190px 0;
+  margin-top: -180px;
+  width: 170px;
+  height: 350px;
+}
+
+.clientes .clientes-bg .circulo1 {
+  position: absolute;
+  background-color: rgb(241, 213, 0);
+  border-radius: 0px 190px 190px 0px;
+  margin-top: 20px;
+  width: 170px;
+  height: 350px;
+  z-index: -100;
+}
+
+.clientes .clientes-bg::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  background-color: black;
+  border-radius: 190px 0px 0px 190px;
+  margin-top: -90px;
+  width: 170px;
+  height: 350px;
+  z-index: 1000;
+}
+
+.clientes .clientes-bg .circulo2 {
+  position: absolute;
+  right: 0;
+  background-color: rgb(241, 213, 0);
+  border-radius: 190px 0px 0px 190px;
+  margin-top: -180px;
+  width: 170px;
+  height: 350px;
+  z-index: 200;
+}
+
+.clientes .clientes-bg .circulo3 {
+  position: absolute;
+  margin-left: 120px;
+  background-color: rgb(241, 213, 0);
+  border-radius: 190px 190px 190px 190px;
+  margin-top: 0px;
+  width: 150px;
+  height: 150px;
+  z-index: 100;
+}
+.clientes .clientes-bg .circulo4 {
+  position: absolute;
+  margin-left: 120px;
+  background-color: black;
+  border-radius: 190px 190px 190px 190px;
+  margin-top: 70px;
+  width: 150px;
+  height: 150px;
+  z-index: 400;
+}
+
+.clientes .clientes-bg .circulo5 {
+  position: absolute;
+  right: 0;
+  margin-right: 120px;
+  background-color: rgb(241, 213, 0);
+  border-radius: 190px 190px 190px 190px;
+  margin-top: 70px;
+  width: 150px;
+  height: 150px;
+  z-index: 2000;
+}
+.clientes .clientes-bg .circulo6 {
+  position: absolute;
+  right: 0;
+  margin-right: 120px;
+  background-color: black;
+  border-radius: 190px 190px 190px 190px;
+  margin-top: 0px;
+  width: 150px;
+  height: 150px;
+  z-index: 3000;
+}
+
+.clientes h1 {
+  font-family: "Roboto";
+  font-size: 4rem;
+  margin: 100px 0 200px 150px;
+  position: right;
+  line-height: 1.3;
+  letter-spacing: 0.1rem;
+  font-weight: 1000;
+}
+
+.clientes h1 > span {
+  color: rgb(241, 213, 0);
+}
