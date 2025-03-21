@@ -26,6 +26,10 @@
   object-fit: cover;
 }
 
+.gallery__item:hover {
+  cursor: pointer;
+}
+
 .gallery__item--1 {
   grid-column-start: 1;
   grid-column-end: 3;
