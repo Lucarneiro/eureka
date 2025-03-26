@@ -58,6 +58,15 @@ body {
   margin-right: 30px;
 }
 
+@media (max-width: 1300px) {
+  .header .menu .item:first-child {
+    margin-left: 20px;
+  }
+  .header .menu .item:nth-child(2) {
+    margin-right: 0px;
+  }
+}
+
 @media (max-width: 700px) {
   .header .menu {
     display: flex;
