@@ -4,19 +4,19 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .detalhe .detalheLeft-img img {
-  height: 450px;
+  height: 65vh;
   margin-top: 100px;
   margin-left: -450px;
 }
 
 .detalhe .detalheLeft-bg {
   background-color: black;
-  width: 850px;
-  height: 700px;
+  width: 60vw;
+  height: 100vh;
 }
 
 .detalhe .detalheLeft-info h3 {
@@ -24,7 +24,7 @@
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: 0.05rem;
-  margin: 100px 100px 30px 50px;
+  margin: 100px 0px 30px 50px;
 }
 
 .detalhe .detalheLeft-info p {
@@ -59,18 +59,18 @@
 
 .detalhe .detalheRight-bg {
   background-color: rgb(234, 206, 0);
-  width: 650px;
-  height: 750px;
+  width: 50vw;
+  height: 100vh;
   position: absolute;
-  right: 0;
-  margin-top: -170px;
+  right: -15px;
+  margin-top: -120px;
   z-index: -100;
 }
 
 .detalhe .detalheRight-img img {
-  height: 450px;
+  height: 65vh;
   z-index: 1000;
-  margin-right: -250px;
+  margin-right: -450px;
 }
 
 .detalhe .detalheRight-info h3 {
@@ -80,7 +80,7 @@
   letter-spacing: 0.1rem;
   text-align: right;
   position: absolute;
-  left: 100px;
+  margin-left: -450px;
 }
 
 .detalhe .detalheRight-info p {
@@ -89,12 +89,12 @@
   line-height: 1.9rem;
   text-align: right;
   position: absolute;
-  left: 110px;
+  margin-left: -430px;
   margin-top: 80px;
 }
 .detalhe .detalheRight-info .detalheRight-btn {
   position: absolute;
-  left: 210px;
+  margin-left: -280px;
   margin-top: 170px;
 }
 
@@ -117,4 +117,155 @@
 
 .detalhe #right {
   grid-row: 4;
+}
+
+@media (max-width: 1200px) {
+  .detalhe .detalheLeft-info h3 {
+    font-size: 2rem;
+  }
+  .detalhe .detalheLeft-img img {
+    height: 350px;
+    margin-left: -400px;
+  }
+  .detalhe .detalheLeft-info p {
+    font-size: 1rem;
+  }
+  .detalhe .detalheRight-info h3 {
+    font-size: 2rem;
+    margin-left: -300px;
+  }
+  .detalhe .detalheRight-img img {
+    height: 350px;
+    margin-right: -320px;
+  }
+  .detalhe .detalheRight-info p {
+    font-size: 1rem;
+    margin-left: -290px;
+  }
+  .detalhe .detalheRight-bg {
+    margin-top: -160px;
+  }
+
+  .detalhe .detalheRight-info .detalheRight-btn {
+    margin-left: -240px;
+  }
+}
+
+@media (max-width: 900px) {
+  .detalhe .detalheLeft-info h3 {
+    width: 200px;
+  }
+}
+
+/* .detalhe .detalheRight-bg {
+    display: none;
+  }
+  .detalhe .detalheLeft-bg {
+    display: none;
+  }
+
+  .detalhe .detalheLeft-img img {
+    margin-left: 0px;
+  }
+  .detalhe .detalheRight-img img {
+    margin-left: 0px;
+  }
+  .detalhe .detalheLeft-info h3 {
+    grid-row: 2;
+  }
+} */
+@media (max-width: 800px) {
+  .detalhe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detalhe .detalheRight-bg {
+    display: none;
+  }
+  .detalhe .detalheLeft-bg {
+    display: none;
+  }
+  .detalhe .left,
+  .detalhe .left2 {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+  }
+  .detalhe .right,
+  .detalhe #right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .detalhe .detalheLeft-img img {
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+  }
+
+  .detalhe .detalheLeft-info h3 {
+    margin: 20px auto;
+    width: 70vw;
+    text-align: center;
+  }
+  .detalhe .detalheLeft-info p {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .detalhe .detalheLeft-info .detalheLeft-btn {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 80px;
+  }
+
+  .detalhe .detalheRight-img img {
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 300px;
+  }
+
+  .detalhe .detalheRight-info h3 {
+    margin: 20px auto;
+    width: 70vw;
+    margin-top: 370px;
+    text-align: center;
+    margin-left: 15vw;
+  }
+
+  .detalhe #right h3 {
+    margin-top: 410px;
+  }
+
+  .detalhe #right p {
+    margin-top: 470px;
+  }
+
+  .detalhe #right .detalheRight-btn {
+    margin-top: 550px;
+  }
+
+  .detalhe #right img {
+    margin-bottom: 250px;
+  }
+
+  .detalhe .detalheRight-info p {
+    margin: 20px auto;
+    width: 70vw;
+    margin-top: 420px;
+    text-align: center;
+    margin-left: 15vw;
+  }
+  .detalhe .detalheRight-info .detalheRight-btn {
+    margin: 0px auto;
+    margin-top: 510px;
+    margin-left: 30vw;
+  }
 }

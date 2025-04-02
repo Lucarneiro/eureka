@@ -19,7 +19,7 @@
   margin: 0 150px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   #depoimentos h1 {
     font-family: "Roboto";
     font-size: 2.5rem;

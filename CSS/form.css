@@ -104,14 +104,16 @@
   margin-bottom: 50px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .form {
     grid-template-columns: 1fr;
   }
 
   .form #h1 {
     margin-top: 70px;
+    font-size: 2.5rem;
     margin-right: 20px;
+    margin-left: 50px;
     margin-bottom: 0px;
   }
 
