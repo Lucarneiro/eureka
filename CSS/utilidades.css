@@ -17,6 +17,15 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+a {
+  font-family: "Roboto";
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
 
 .container {
   width: 60%;

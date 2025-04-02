@@ -1,18 +1,24 @@
 .intro {
-  background-image: url(/FOTOS/Jardim02.jpg);
-  background-position: -50px -250px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 90vh;
   margin: 0;
 }
 
-.text-intro {
+.intro .foto-intro {
+  width: 100%;
+  z-index: -100000;
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+
+.intro .text-intro {
   background: white;
-  height: 65vh;
+  height: 60vh;
   width: 55vw;
   margin: 100px;
-  margin-top: 70px;
+  grid-row: 1;
+  grid-column: 1;
   margin-left: 80px;
   border-radius: 40px;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -148,13 +154,14 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .intro {
     grid-template-columns: 1fr;
   }
-  .text-intro {
+
+  .intro .text-intro {
     width: 70vw;
-    height: 60vh;
+    height: 400px;
   }
   .text-intro h1 {
     font-size: 1.5rem;
