@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6;
+}
+a {
+  font-family: "Roboto";
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.btn1,
+.btn1-hamburguer {
+  background-color: transparent;
+  color: white;
+  border: white solid 2px;
+  border-radius: 40px;
+  padding: 15px 25px;
+  letter-spacing: 0.1rem;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.btn1:hover,
+.btn1-hamburguer:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

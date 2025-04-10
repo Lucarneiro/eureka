@@ -1,0 +1,37 @@
+#depoimentos {
+  margin-top: 200px;
+}
+
+#depoimentos h1 {
+  font-family: "Roboto";
+  font-size: 4rem;
+  margin: 70px 50px 100px 150px;
+  line-height: 1.3;
+  letter-spacing: 0.05rem;
+  font-weight: 1000;
+}
+
+#depoimentos h1 > span {
+  color: rgb(234, 206, 0);
+}
+
+#depoimentos .google {
+  margin: 0 150px;
+}
+
+@media (max-width: 1200px) {
+  #depoimentos h1 {
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    margin: 0px 50px 70px 50px;
+    line-height: 1.3;
+    letter-spacing: 0.05rem;
+    font-weight: 1000;
+  }
+  #depoimentos .google {
+    margin: 0 50px;
+  }
+  #depoimentos {
+    margin-top: 100px;
+  }
+}
